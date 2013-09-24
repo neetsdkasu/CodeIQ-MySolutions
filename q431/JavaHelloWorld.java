@@ -4,12 +4,12 @@
 //---------------------------------------
 //CodeIQ  Q431
 // https://codeiq.jp/ace/cielavenir/q431
-//---------------------------------------
-//問題文(抜粋)
-//
+// 
 // Quiz-Title: Restricted Words
 // Quiz-Author: @cielavenir cielavenir
 //              https://codeiq.jp/ace/cielavenir/
+//
+//問題文(抜粋)
 //
 // 標準出力に
 // Hello World
