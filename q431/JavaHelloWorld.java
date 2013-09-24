@@ -1,6 +1,6 @@
 //---------------------------------------
 // My Answer for CodeIQ Q431
-// Author Leonardone @ NEETSDKASU
+// Author: Leonardone @ NEETSDKASU
 //---------------------------------------
 //CodeIQ  Q431
 // https://codeiq.jp/ace/cielavenir/q431
