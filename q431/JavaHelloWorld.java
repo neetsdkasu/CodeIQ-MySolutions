@@ -24,8 +24,9 @@
 // Hello Algorithm/HSP/Java/JavaScript(Node.js)/Kuin/Lisp/Lua/OCaml/Pascal/
 // Perl/PHP/Pike/Python/R/Ruby/Scala/Scheme/Smalltalk/VB.Net
 // のいずれかを使用して下さい。指定された言語以外での解答は評価されません。
-// (以下略)
+// (省略)
 //---------------------------------------
+//以下、私の解答コード
 
 // Java
 package codeiq;
