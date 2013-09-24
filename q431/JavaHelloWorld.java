@@ -7,6 +7,10 @@
 //---------------------------------------
 //問題文(一部引用)
 //
+// Quiz-Title: Restricted Words
+// Quiz-Author: @cielavenir cielavenir
+//              https://codeiq.jp/ace/cielavenir/
+//
 // 標準出力に
 // Hello World
 // と出力するプログラムを作成して下さい。
