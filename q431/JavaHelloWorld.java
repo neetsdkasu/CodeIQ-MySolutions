@@ -5,7 +5,7 @@
 //CodeIQ  Q431
 // https://codeiq.jp/ace/cielavenir/q431
 //---------------------------------------
-//問題文(一部引用)
+//問題文(抜粋)
 //
 // Quiz-Title: Restricted Words
 // Quiz-Author: @cielavenir cielavenir
