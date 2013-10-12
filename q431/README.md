@@ -4,7 +4,7 @@ https://codeiq.jp/ace/cielavenir/q431
 Quiz-Title: Restricted Words
 Quiz-Author: @cielavenir cielavenir
               https://codeiq.jp/ace/cielavenir/
-
+===============
 問題文(抜粋)
 
 標準出力に
