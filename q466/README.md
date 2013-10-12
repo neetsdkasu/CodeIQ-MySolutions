@@ -6,7 +6,7 @@ Quiz-Title: 挑戦者求む！【数学】平成変換 by CodeIQ×はてな エ�
 Quiz-Author: CodeIQ×はてな エンジニア夏祭り2013 Short Coder @ozy4dm
                 https://codeiq.jp/ace/ozy/
 
-***問題文(抜粋)***
+***問題文(一部抜粋)***
 
 
 設問1
@@ -70,3 +70,8 @@ Quiz-Author: CodeIQ×はてな エンジニア夏祭り2013 Short Coder @ozy4dm
 ステップ数の少ない解答を高評価とします！
 
 （どうして年数が今年ではなく来年なのかは、余力があれば考えてみてください。）
+
+
+
+
+(以下省略)
