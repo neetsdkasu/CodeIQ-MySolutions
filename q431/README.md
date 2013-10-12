@@ -6,7 +6,7 @@ Quiz-Title: Restricted Words
 Quiz-Author: @cielavenir cielavenir
               https://codeiq.jp/ace/cielavenir/
 
-***問題文(抜粋)***
+***問題文(一部抜粋)***
 
 標準出力に
 Hello World
