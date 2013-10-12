@@ -2,7 +2,7 @@ CodeIQ Q466
 ===============
 https://codeiq.jp/ace/ozy/q466
 
-Quiz-Title: 挑戦者求む！【数学】平成変換 by CodeIQ×はてな エンジニア夏祭り2013  
+Quiz-Title: 平成変換  
 Quiz-Author: CodeIQ×はてな エンジニア夏祭り2013 Short Coder @ozy4dm
                 https://codeiq.jp/ace/ozy/
 
