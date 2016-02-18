@@ -1,0 +1,1 @@
+a:=0. b:=1. c:=0. d:=0. e:=0. r:=1. 0 to: 99 do: [:i|r printNl. r:=r+a. t:=e. e:=d. d:=c. c:=b. b:=a+t. a:=e+t]

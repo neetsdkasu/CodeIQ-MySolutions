@@ -1,0 +1,1 @@
+open Int64;;let rec f n a b c d e r=if n<100 then begin print_endline(to_string r);f(n + 1)(add d e)(add a e)b c d(add r a)end in f 0 zero one zero zero zero one;

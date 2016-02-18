@@ -1,0 +1,1 @@
+Module Z:Sub Main:Dim B,C,D,E,T,R,I,A:A=1:For I=0 To 99:R+=A:System.Console.WriteLine(R):T=E:E=D:D=C:C=B:B=T+A:A=T+E:Next:End Sub:End Module

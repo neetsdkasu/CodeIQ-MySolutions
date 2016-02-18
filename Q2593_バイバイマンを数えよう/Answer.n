@@ -1,0 +1,1 @@
+def f(n,a,b,c,d,e,r){when(n<100){System.Console.WriteLine(r);f(n+1,d+e,a+e,b,c,d,r+a)}}f(0,0L,1L,0L,0L,0L,1L)

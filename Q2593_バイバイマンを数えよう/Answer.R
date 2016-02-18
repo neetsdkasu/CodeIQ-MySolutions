@@ -1,0 +1,1 @@
+a=1;b=c=d=e=0;for(i in 0:99){cat(a+b+c+d+e);cat("\n");t=e;e=d;d=c;c=b;b=a+t;a=t+e}

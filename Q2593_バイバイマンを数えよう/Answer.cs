@@ -1,0 +1,1 @@
+class M{static void Main(){f(100,1,0,0,0,0);}static void f(int n,long a,long b,long c,long d,long e){if(n>0){System.Console.WriteLine(a+b+c+d+e);f(n-1,d+e,a+d,b,e,c);}}}

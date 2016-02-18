@@ -1,0 +1,1 @@
+proc F {n a b c d e r} {if {$n>0} {puts $r;F [expr $n-1] [expr $d+$e] [expr $a+$e] $b $c $d [expr $r+$a]}};F 100 0 1 0 0 0 1

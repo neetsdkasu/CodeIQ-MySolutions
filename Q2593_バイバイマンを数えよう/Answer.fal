@@ -1,0 +1,1 @@
+b=c=d=e=r=0;a=1;for i in[0:100];>r+=a;t=e;e=d;d=c;c=b;b=a+t;a=t+e;end

@@ -1,0 +1,1 @@
+begin var a,b,c,d,e,t,r,i:LongInt;a:=0;b:=1;c:=0;d:=0;e:=0;r:=1;for i:=1 to 100 do begin writeln(r);r:=r+a;t:=e;e:=d;d:=c;c:=b;b:=a+t;a:=t+e end end.

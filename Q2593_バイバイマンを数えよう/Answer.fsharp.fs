@@ -1,0 +1,1 @@
+List.map(printfn"%d"<<Seq.sum)<|List.scan(fun[a;b;c;d;e]_->[d+e;a+e;b;c;d])[1L;0L;0L;0L;0L][0..98]

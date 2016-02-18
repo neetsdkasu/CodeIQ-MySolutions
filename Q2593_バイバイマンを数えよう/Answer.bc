@@ -1,0 +1,2 @@
+b=r=1;for(i=read();i--;){print r,"\n";r+=a;t=e;e=d;d=c;c=b;b=a+t;a=t+e}
+

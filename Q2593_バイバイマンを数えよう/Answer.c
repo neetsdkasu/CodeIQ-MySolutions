@@ -1,0 +1,1 @@
+long long a=1,b,c,d,e,r,t;main(i){while(101>i++){printf("%lld\n",r+=a);t=e;e=d;d=c;c=b;b=a+t;a=t+e;}}

@@ -1,0 +1,1 @@
+import std.stdio;void f(T)(T n,T a,T b,T c,T d,T e){if(n>0){writeln(a+b+c+d+e);f(n-1,d+e,a+d,b,e,c);}}void main(){f!long(100,1,0,0,0,0);}

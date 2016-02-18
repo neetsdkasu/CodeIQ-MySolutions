@@ -1,0 +1,1 @@
+object Main extends App{type L=Long;def f(n:L,a:L,b:L,c:L,d:L,e:L):L={if(n>0){println(a+b+c+d+e);f(n-1,d+e,a+d,b,e,c)};0};f(100,1,0,0,0,0)}

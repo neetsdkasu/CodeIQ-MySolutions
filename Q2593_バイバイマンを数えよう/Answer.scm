@@ -1,0 +1,1 @@
+(define f(lambda(n a b c d e r)(cond((< n 100)(write r)(newline)(f(+ n 1)(+ d e)(+ a e) b c d(+ r a))))))(f 0 0 1 0 0 0 1)

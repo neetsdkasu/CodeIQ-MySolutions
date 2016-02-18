@@ -1,0 +1,1 @@
+main=mapM(print.sum)$scanl(\[a,b,c,d,e]_->[d+e,a+e,b,c,d])[1,0,0,0,0][0..98]

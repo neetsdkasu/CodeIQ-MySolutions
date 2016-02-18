@@ -1,0 +1,1 @@
+int main(){int a,b=1,c,d,e,r=1,t,i=100;for(;i--;){write(r+"\n");r+=a;t=e;e=d;d=c;c=b;b=a+t;a=t+e;}}

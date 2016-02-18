@@ -1,0 +1,1 @@
+b,r,a,c,d,e=1,1,0,0,0,0 for i=0,99 do io.write(r,"\n") a,b,c,d,e,r=d+e,a+e,b,c,d,r+a end

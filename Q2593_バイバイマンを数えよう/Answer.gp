@@ -1,0 +1,1 @@
+a=1;b=c=d=e=r=0;for(i=0,99,print(r+=a);t=e;e=d;d=c;c=b;b=a+t;a=t+e);quit

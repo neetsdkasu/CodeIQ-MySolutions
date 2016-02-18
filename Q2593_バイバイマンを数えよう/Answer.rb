@@ -1,0 +1,1 @@
+a=1;b=c=d=e=r=0;100.times{p r+=a;a,b,c,d,e=d+e,a+e,b,c,d}

@@ -1,0 +1,1 @@
+program p;var a,b,c,d,e,r,t:int64;i:integer;begin r:=1;b:=1;for i:=1 to 100 do begin writeln(r);r:=r+a;t:=e;e:=d;d:=c;c:=b;b:=a+t;a:=t+e end end.

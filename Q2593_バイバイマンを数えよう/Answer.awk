@@ -1,0 +1,1 @@
+{x=10^8;a=1;for(i=$1;i--;){g=a+b+c+d+e;z=p+q+r+s+t;if(z)printf("%d%08d\n",z+g/x,g%x);else print g;f=d;y=s;d=e;s=t;e=c;t=r;c=b;r=q;b=a+f;q=p+y+int(b/x);b%=x;a=f+d;p=y+s+int(a/x);a%=x}}

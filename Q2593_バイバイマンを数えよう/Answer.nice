@@ -1,0 +1,1 @@
+void main(String[]x){long a=0,b=1,c=0,d=0,e=0,r=1,t;for(i:0..99){println(r);r+=a;t=e;e=d;d=c;c=b;b=a+t;a=t+e;}}

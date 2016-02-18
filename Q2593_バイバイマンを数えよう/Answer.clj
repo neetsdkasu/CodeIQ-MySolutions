@@ -1,0 +1,1 @@
+(loop[n 100 a 1 b 0 c 0 d 0 e 0](if(> n 0)(do(prn(+ a b c d e))(recur(dec n)(+ d e)(+ a d)b e c))))

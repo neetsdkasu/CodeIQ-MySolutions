@@ -1,0 +1,1 @@
+a=1;r=b=c=d=e=0;for i=0:99;printf("%d\n",r+=a);t=e;e=d;d=c;c=b;b=t+a;a=t+e;endfor

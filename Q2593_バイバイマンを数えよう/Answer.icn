@@ -1,0 +1,2 @@
+procedure main();f(100,0,1,0,0,0,1);end
+procedure f(n,a,b,c,d,e,r);if n>0 then{write(r);f(n-1,d+e,a+e,b,c,d,r+a)};end
