@@ -1,0 +1,46 @@
+/* Try CodeIQ
+ * author: Leonardone @ NEETSDKASU
+ */
+
+/* floor */
+define i (x) {
+	auto oldscale
+	oldscale = scale
+	scale = 0
+	x /= 1
+	scale = oldscale
+	return (x);
+}
+
+/* ceil */
+define c (x) {
+	auto y
+	y = i(x)
+	if (x > y) return (y + 1);
+	return (y);
+}
+
+define f (n) {
+	return (1 + i(n * l(n) / l(10))); /* 間違っていたので修正 */
+}
+
+define h (b, t, m) {
+	auto x, y
+	if (b > t) return (-1);
+	x = i((b + t) / 2)
+	y = f(x)
+	if (y < m) {
+		return (h(x + 1, t, m));
+	} else if (y > m) {
+		return (h(b, x - 1, m));
+	} else {
+		return (x);
+	}
+}
+
+define g (m) {
+	return (h(2, 10 ^ 10, m));
+}
+
+m = read()
+print g(m), "\n"

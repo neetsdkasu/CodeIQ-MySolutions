@@ -1,0 +1,27 @@
+using System;
+using Nemerle.IO;
+
+def f(n) {
+	1.0 + Math.Floor(n * Math.Log10(n))
+}
+
+def h(b, t, m) {
+	if (b > t) -1.0;
+	else {
+		def x = Math.Floor((b + t) / 2.0);
+		def y = f(x);
+		if (y < m) h(x + 1.0, t, m);
+		else if (y > m) h(b, x - 1.0, m);
+		else x;
+	}
+}
+
+def g(m : double) : double {
+	h(2.0, Math.Pow(10.0, 10.0), m);
+}
+
+def m = double.Parse(Console.ReadLine());
+def ans = g(m) :> long;
+
+printf("%ld\n", ans);
+

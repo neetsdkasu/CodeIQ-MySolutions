@@ -1,0 +1,26 @@
+// Try CodeIQ
+// author: Leonardone @ NEETSDKASU
+
+function f(n)
+	return 1 + floor(n * log(n) / log(10)) // 間違っていたので修正
+end
+
+function g(m)
+	h = function(b, t, m)
+			if b > t: return -1
+			x = floor((b + t) / 2)
+			y = f(x)
+			if y < m
+				return fself(x + 1, t, m)
+			elif y > m
+				return fself(b, x - 1, m)
+			else
+				return x
+			end
+		end
+	return h(2, pow(10, 10), m)
+end
+
+m = int(input())
+ans = g(m)
+printl(ans)

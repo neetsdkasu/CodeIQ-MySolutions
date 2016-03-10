@@ -1,0 +1,25 @@
+# Try CodeIQ
+# author: Leonardone @ NEETSDKASU
+
+procedure main()
+	m := read()
+	ans := g(m)
+	write(ans)
+end
+
+procedure f(n)
+	return integer(n * log(n, 10)) + 1
+end
+
+procedure g(m)
+	return h(2, 10 ^ 10, m)
+end
+
+procedure h(b, t, m)
+	if b > t then return -1
+	x := integer((b + t) / 2)
+	y := f(x)
+	if y > m then return h(b, x - 1, m)
+	if y < m then return h(x + 1, t, m)
+	return x
+end

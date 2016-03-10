@@ -1,0 +1,28 @@
+// Try CodeIQ
+// author: Leonardone @ NEETSDKASU
+
+import java.io.*;
+
+double f(double n) {
+    return 1.0 + Math.floor(n * Math.log10(n));
+}
+
+double h(double b, double t, double m) {
+    if (b > t) return -1.0;
+    let x = Math.floor((b + t) / 2.0);
+    let y = f(x);
+    if (m < y) return h(b, x - 1.0, m);
+    if (m > y) return h(x + 1.0, t, m);
+    return x;
+}
+
+double g(double m) {
+    return h(2.0, 10.0 ** 10.0, m);
+}
+
+void main(String[] args) {
+    let r = new BufferedReader(new InputStreamReader(System.in));
+    let m = Double.parseDouble(r.readLine());
+    let ans = long(g(m));
+    System.out.println(ans);
+}
