@@ -1,0 +1,102 @@
+最長距離：25
+解き方：
+/*
+ 条件に違反しないようにAからBに辿りつくまでマスを進んでいき経路探索する全経路検索で最長移動距離を求める
+*/
+import java.lang.*;
+
+class Q661
+{
+	
+	private final int W, H;   // マスの大きさ
+	private final int Xa, Ya; // 点Aの座標
+	private final int Xb, Yb; // 点Bの座標
+	private final int LIMIT;  // 移動量の制限
+	
+	private int[]   horizontal_count; // 行ごとの横線の本数
+	private int[]   vertical_count;   // 列ごとの縦線の本数
+	private int     max = -1;         // 最大移動量 (-1は未探索、0は解なし)
+	
+	Q661(int w, int h, int xa, int ya, int xb, int yb, int limit) {
+		W = w;
+		H = h;
+		Xa = xa;
+		Ya = ya;
+		Xb = xb;
+		Yb = yb;
+		LIMIT = limit;
+	}
+	
+	private void seek(int x, int y) {
+		
+		if (x < 0 || x > W || y < 0 || y > H) {
+			// マスの範囲外
+			return;
+		}
+		
+		if (x == Xb && y == Yb) {
+			// 終端(点B)に到着、総移動量を求めて最長だったら更新
+			int len = 0;
+			for (int i : horizontal_count) {
+				len += i;
+			}
+			for (int i : vertical_count) {
+				len += i;
+			}
+			if (len > max) {
+				max = len;
+			}
+			return;
+		}
+		
+		if (horizontal_count[y] < LIMIT) {
+			// 横線の本数がLIMIT未満ならに横移動して経路探索を続ける
+			horizontal_count[y]++;
+			seek(x + 1, y); // マスの右へ移動
+			seek(x - 1, y); // マスの左へ移動
+			horizontal_count[y]--;
+		}
+		
+		if (vertical_count[x] < LIMIT) {
+			// 縦線の本数がLIMIT未満ならに縦移動して経路探索を続ける
+			vertical_count[x]++;
+			seek(x, y + 1); // マスの下へ移動
+			seek(x, y - 1); // マスの上へ移動
+			vertical_count[x]--;
+		}
+	}
+	
+	Q661 seekMax() {
+		if (max < 0) {
+			horizontal_count = new int[H + 1];
+			vertical_count   = new int[W + 1];
+			max = 0;
+			seek(Xa, Ya); // 始点(点A)から経路探索を開始
+		}
+		return this;
+	}
+	
+	@Override
+	public String toString() {
+		return "W=" + W + ", "
+				+ "H=" + H + ", "
+				+ "A(" + Xa + ", " + Ya + "), "
+				+ "B(" + Xb + ", " + Yb + "), "
+				+ "Limit=" + LIMIT + ", "
+				+ "max=" + max;
+	}
+	
+	public static void main(String[] args) {
+		
+		int W = 6;
+		int H = 5;
+		int Xa = 0;
+		int Ya = 0;
+		int Xb = W;
+		int Yb = H;
+		int Limit = 2;
+		
+		System.out.println(new Q661(W, H, Xa, Ya, Xb, Yb, Limit).seekMax());
+	}
+	
+}
